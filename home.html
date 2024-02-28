@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>El Ahorcado | Oracle ONE</title>
+    <link rel="stylesheet" href="./lib/bootstrap_v53/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <img src="./assets/img/logo.svg" alt="alura latam" class="al-logo d-inline-block align-text-top">
+                El Ahorcado
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuContent" aria-controls="menuContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 text-center">
+                    <li class="nav-item text-center">
+                        <a class="nav-link fw-medium" aria-current="page" href="https://github.com/danieldevelop" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Github">
+                            <img src="https://cdn.hugeicons.com/icons/github-01-stroke-rounded.svg" alt="github-01" class="d-inline-block align-text-top"/>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="https://www.linkedin.com/in/daniel-gomez-g-328bb4105/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Linkedin">
+                            <img src="https://cdn.hugeicons.com/icons/linkedin-02-stroke-rounded.svg" alt="linkedin-02" class="d-inline-block align-text-top"/>
+                            Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Indicamos la ubicación actual del usuario en el sitio web. -->
+    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';" class="my-4">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./" class="d-inline-block align-text-top"/>Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>   
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <section class="al-ahorcado text-center">
+                <!-- <img src="./assets/img/states/01.png" alt="hombre-ahorcado" id="al-hombre" class="d-inline-block"> -->
+                <img alt="hombre-ahorcado" id="al-hombre">
+            </section>
+
+            <div class="al-adivinado text-center"></div>
+
+            <div class="al-errado text-center mt-3 text-danger"></div>
+
+            <section class="al-botones my-5 d-flex justify-content-center align-items-center gap-3">
+                <button type="button" class="btn btn-primary" onclick="nuevoJuego()">Nuevo Juego</button>
+                <a href="./" class="btn btn-outline-dark">Desistir</a>
+            </section>
+        </div>
+    </main>
+
+    <script src="./lib/bootstrap_v53/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./lib/sweetalert2@11.js"></script>
+</body>
+</html>
