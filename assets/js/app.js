@@ -26,7 +26,6 @@ import { escojerPalabraSecreta, dibujarLineas, adivinarLetra } from './ahorcado.
         juego.restante = letras.size;
 
         dibujarLineas(juego);
-        console.log(juego);
     };
 
     window.addEventListener('keydown', (e) => {
