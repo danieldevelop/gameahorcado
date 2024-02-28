@@ -1,0 +1,42 @@
+body {
+    background-color: #F3F5FC;
+}
+
+.al-logo {
+    width: 4rem;
+}
+
+.al-body {
+    margin: 3rem 0 0 0;
+}
+
+
+#al-hombre {
+    max-width: 100%;
+    max-height: 100%;
+    width: 20.60rem;
+    height: 22.75rem;
+}
+
+.al-adivinado {
+    font-size: 1.8rem;
+    color: #002462;
+}
+
+.al-adivinada {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-bottom: 2px solid #002462;
+    margin-left: 0.4rem;
+    line-height: 5.5rem;
+}
+
+.al-errada {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.al-botones > button,
+.al-botones > a {
+    width: 15rem;
+}
